@@ -16,7 +16,7 @@ class ProfileImage extends StatelessWidget {
         decoration: const BoxDecoration(
           shape: BoxShape.circle, // Optional: makes it circular
           image: DecorationImage(
-            image: CachedNetworkImageProvider(profileImage),
+            image: AssetImage(profileImage),
             filterQuality: FilterQuality.high,
             fit: BoxFit.cover, // Adjusts how the image fits
           ),

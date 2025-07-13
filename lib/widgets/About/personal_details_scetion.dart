@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/Config/color_code.dart';
 import 'package:portfolio_app/Config/font_text_style.dart';
+import 'package:portfolio_app/Config/image_link.dart';
 import 'package:portfolio_app/Config/text_string.dart';
 import 'package:portfolio_app/widgets/About/details_tile.dart';
 
@@ -18,10 +19,7 @@ class PersonalDetailSection extends StatelessWidget {
           // ==========================================
           // Personal Image
           // ==========================================
-          Container(
-            alignment: Alignment.topLeft,
-            child: const AboutImage(),
-          ),
+          Container(alignment: Alignment.topLeft, child: const AboutImage()),
           // ==========================================
           // Personal details
           // ==========================================
@@ -41,7 +39,7 @@ class PersonalDetailSection extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
@@ -49,9 +47,7 @@ class PersonalDetailSection extends StatelessWidget {
 }
 
 class AboutDescription extends StatelessWidget {
-  const AboutDescription({
-    super.key,
-  });
+  const AboutDescription({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -62,24 +58,20 @@ class AboutDescription extends StatelessWidget {
         color: CustomeColor.headerTextColor,
       ),
       minFontSize: 10,
-     // maxLines: 3,
+      // maxLines: 3,
     );
   }
 }
 
 class AboutTitle extends StatelessWidget {
-  const AboutTitle({
-    super.key,
-  });
+  const AboutTitle({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Flexible(
       child: AutoSizeText(
         resumeTitle,
-        style: FontTextStyle.headerStyle.copyWith(
-          fontSize: 20,
-        ),
+        style: FontTextStyle.headerStyle.copyWith(fontSize: 20),
         minFontSize: 14,
         maxLines: 1,
       ),
@@ -88,16 +80,10 @@ class AboutTitle extends StatelessWidget {
 }
 
 class AboutImage extends StatelessWidget {
-  const AboutImage({
-    super.key,
-  });
+  const AboutImage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return CachedNetworkImage(
-      fit: BoxFit.fill,
-      imageUrl:
-          "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/about.webp",
-    );
+    return CachedNetworkImage(fit: BoxFit.fill, imageUrl: aboutImage);
   }
 }

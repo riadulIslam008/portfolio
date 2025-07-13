@@ -69,13 +69,6 @@ class _SkillProgressSectionState extends State<SkillProgressSection> {
               ),
             ),
           ),
-          // LinearProgressIndicator(
-          //   value: level,
-          //   minHeight: 10,
-          //   borderRadius: 50,
-          //   backgroundColor: Colors.grey.shade300,
-          //   valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-          // ),
           const SizedBox(height: 12),
         ],
       ),

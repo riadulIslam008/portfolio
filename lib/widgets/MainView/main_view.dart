@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/widgets/About/about_view.dart';
 import 'package:portfolio_app/widgets/Home/home_view.dart';
+import 'package:portfolio_app/widgets/Projects/landing_view_project.dart';
 import 'package:portfolio_app/widgets/Resume/resume_landing_view.dart';
 import 'package:portfolio_app/widgets/Skills/skill_landing_page.dart';
 
@@ -40,6 +41,10 @@ class MainView extends StatelessWidget {
           // RESUME SECTION
           // ==========================================
           ResumeLandingView(),
+          // ==========================================
+          // PROJECT SECTION
+          // ==========================================
+          LandingViewProject(),
         ],
       ),
     );

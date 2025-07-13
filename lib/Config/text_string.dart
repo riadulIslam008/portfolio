@@ -47,7 +47,6 @@ const List universityEduction = [
 const String resume = "Resume";
 const String education = "Education";
 
-
 const Map<String, dynamic> flutterAdvanceTopics = {
   "Heading": "Flutter Advance",
 
@@ -62,9 +61,17 @@ const Map<String, dynamic> flutterAdvanceTopics = {
 
   "Architecture Patterns": ["Clean Architecture", "MVVM(Model-View-ViewModel)"],
 
+  "API Integration" : [" Http", "Dio"],
+
   "Firebase": ["Firebase Cloud", "Firebase Authentication", "Firebase Storage"],
 
   "Local Storage": ["SQLite", "get storage", "Hive"],
 };
 
-const String  flutterLearningPeriod="08-2021 to 02-2022";
+const String flutterLearningPeriod = "08-2021 to 02-2022";
+
+//PROJECT SECTION
+const String project = "Projects";
+const String projectDescription =
+    "Worked on diverse projects including a video calling app, media streaming app with API integration, animated UI with ClipPath, SQLite-based note app, and interactive games like Tic-Tac-Toe and Flutter Puzzle.";
+

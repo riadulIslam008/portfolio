@@ -25,13 +25,12 @@ class WebView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenHeight = MediaQuery.of(context).size.height;
-    double screenwidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Row(
         children: [
           ///Drawer........................
           Container(
-            width: screenwidth * 0.25,
+            width: 280,
             height: screenHeight,
             alignment: Alignment.topLeft,
             color: CustomeColor.secondaryColor,

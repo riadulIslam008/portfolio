@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_app/Config/color_code.dart';
@@ -29,7 +28,7 @@ class HomeView extends StatelessWidget {
       // ==========================================
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: CachedNetworkImageProvider(backgroundImage),
+          image: AssetImage(backgroundImage),
           fit: BoxFit.fill,
         ),
       ),

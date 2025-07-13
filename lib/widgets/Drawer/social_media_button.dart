@@ -10,7 +10,7 @@ class SocialMediaButtons extends StatelessWidget {
     double screenwidth = MediaQuery.of(context).size.width;
     return Align(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: screenwidth * 0.01),
+        padding: const EdgeInsets.only(top: 15.0),
         child: Row(
           mainAxisAlignment: screenwidth < 400
               ? MainAxisAlignment.spaceEvenly
@@ -68,7 +68,7 @@ class SocialMediaButton extends StatelessWidget {
         child: FaIcon(
           iconname,
           color: iconColor,
-          size: (screenwidth > 850) ? screenwidth * 0.02 : 25,
+          size: (screenwidth > 850) ? screenwidth * 0.025 : 25,
         ),
       ),
     );
