@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:portfolio_app/Config/color_code.dart';
 import 'package:portfolio_app/widgets/Drawer/drawer.dart';
 import 'package:portfolio_app/widgets/MainView/main_view.dart';
@@ -11,16 +13,19 @@ class LandingPage extends StatefulWidget {
 }
 
 class _MyLandingPageState extends State<LandingPage> {
+  final ScrollController scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    return (screenWidth < 850) ? const MobileView() : const WebView();
+    return (screenWidth < 850)
+        ? MobileView(scrollController: scrollController)
+        : WebView(scrollController: scrollController);
   }
 }
 
-
 class WebView extends StatelessWidget {
-  const WebView({super.key});
+  final ScrollController scrollController;
+  const WebView({super.key, required this.scrollController});
 
   @override
   Widget build(BuildContext context) {
@@ -36,9 +41,9 @@ class WebView extends StatelessWidget {
             color: CustomeColor.secondaryColor,
             child: const SideDrawer(),
           ),
-          const Expanded(
+          Expanded(
             child: SafeArea(
-              child: MainView(),
+              child: MainView(scrollController: scrollController),
             ),
           ),
         ],
@@ -47,9 +52,9 @@ class WebView extends StatelessWidget {
   }
 }
 
-
 class MobileView extends StatelessWidget {
-  const MobileView({super.key});
+  final ScrollController scrollController;
+  const MobileView({super.key, required this.scrollController});
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +84,7 @@ class MobileView extends StatelessWidget {
         backgroundColor: CustomeColor.secondaryColor,
         child: SideDrawer(),
       ),
-      body: const MainView(),
+      body: MainView(scrollController: scrollController),
     );
   }
 }

@@ -16,7 +16,6 @@ class DescriptionTextView extends StatelessWidget {
       style: FontTextStyle.textfont
           .copyWith(fontSize: 12, color: CustomeColor.headerTextColor),
       minFontSize: 10,
-    //  maxLines: 3,
     );
   }
 }

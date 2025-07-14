@@ -50,9 +50,7 @@ class ProjectCard extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
-        onTap: () {
-          print("clicked");
-        },
+        onTap: () {},
         splashColor: Colors.redAccent.withOpacity(0.3),
         highlightColor: Colors.redAccent.withOpacity(0.2),
         child: Container(

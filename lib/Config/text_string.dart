@@ -21,7 +21,7 @@ const List<Map<String, String>> personalDetailsTwo = [
 
 // SKILL SCETION
 const String skillDescription =
-    "Skill development is the process of improving specific skills to be more efficient and effective when performing a task.";
+    "I am currently exploring Python and Bloc, building on my advanced proficiency with GetX, as I aim to expand my expertise in backend development.";
 
 const List<Map<String, double>> skillProgressSectionName = [
   {"HTML": 1},
@@ -61,7 +61,7 @@ const Map<String, dynamic> flutterAdvanceTopics = {
 
   "Architecture Patterns": ["Clean Architecture", "MVVM(Model-View-ViewModel)"],
 
-  "API Integration" : [" Http", "Dio"],
+  "API Integration": [" Http", "Dio"],
 
   "Firebase": ["Firebase Cloud", "Firebase Authentication", "Firebase Storage"],
 
@@ -75,3 +75,12 @@ const String project = "Projects";
 const String projectDescription =
     "Worked on diverse projects including a video calling app, media streaming app with API integration, animated UI with ClipPath, SQLite-based note app, and interactive games like Tic-Tac-Toe and Flutter Puzzle.";
 
+// FEEDBACK SECTION
+const String feedback = "Feedback";
+const String feedbackDescription =
+    "You're welcome to share your feedback or get in touch with me.";
+const String hintTextForName = "Your Name";
+const String hintTextForEmail = "Your Email";
+const String hintTextForSubject = "Email Subject";
+const String hintTextForMessage = "Write Your Meassge";
+const String sendFeedback = "Send Feedback";
