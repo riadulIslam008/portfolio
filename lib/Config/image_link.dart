@@ -51,3 +51,16 @@ const String ticTacToeGameApkLink =
     "https://github.com/riadulIslam008/tic-tac-toe-with-getx/releases/tag/1.0.2";
 const String aiRadioApkLink =
     "https://drive.usercontent.google.com/download?id=1-1e-vyjyu9BflJ_RD_pVdimwaUsnz78_&export=download&authuser=0";
+
+// AMER SCHOOL IMAGES LIST
+const String amerSchoolImage_1= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-1.webp";
+const String amerSchoolImage_2= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-2.webp";
+const String amerSchoolImage_3= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-3.webp";
+const String amerSchoolImage_4= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-4.webp";
+const String amerSchoolImage_5= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-5.webp";
+const String amerSchoolImage_6= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-6.webp";
+const String amerSchoolImage_7= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-7.webp";
+const String amerSchoolImage_8= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-8.webp";
+const String amerSchoolImage_9= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-9.webp";
+const String amerSchoolImage10= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-10.webp";
+

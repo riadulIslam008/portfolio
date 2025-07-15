@@ -1,4 +1,6 @@
 // ABOUT SECTION
+import 'package:portfolio_app/Config/image_link.dart';
+
 const String descriptionText =
     "As an enthusiastic developer, I am always eager to learn new technologies. I thrive in collaborative environments and enjoy contributing fresh ideas to team projects. Therefore, an opportunity for an internship would be a valuable and competitive achievement for me, helping bridge my skills with real-world experience.";
 const String resumeTitle = "Frontend Developer | Backend Fundamentals";
@@ -75,6 +77,18 @@ const String project = "Projects";
 const String projectDescription =
     "Worked on diverse projects including a video calling app, media streaming app with API integration, animated UI with ClipPath, SQLite-based note app, and interactive games like Tic-Tac-Toe and Flutter Puzzle.";
 
+const List<String> amerSchoolImages = [
+  amerSchoolImage_1,
+  amerSchoolImage_2,
+  amerSchoolImage_3,
+  amerSchoolImage_4,
+  amerSchoolImage_5,
+  amerSchoolImage_6,
+  amerSchoolImage_7,
+  amerSchoolImage_8,
+  amerSchoolImage_9,
+  amerSchoolImage10,
+];
 // FEEDBACK SECTION
 const String feedback = "Feedback";
 const String feedbackDescription =

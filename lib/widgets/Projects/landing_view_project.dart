@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_app/Config/description_text_view.dart';
 import 'package:portfolio_app/Config/header.dart';
 import 'package:portfolio_app/Config/text_string.dart';
-import 'package:portfolio_app/widgets/Projects/project_card.dart';
+import 'package:portfolio_app/widgets/Projects/portfolio_wrap_section.dart';
 
 class LandingViewProject extends StatelessWidget {
   const LandingViewProject({super.key});
