@@ -77,18 +77,48 @@ const String project = "Projects";
 const String projectDescription =
     "Worked on diverse projects including a video calling app, media streaming app with API integration, animated UI with ClipPath, SQLite-based note app, and interactive games like Tic-Tac-Toe and Flutter Puzzle.";
 
-const List<String> amerSchoolImages = [
-  amerSchoolImage_1,
-  amerSchoolImage_2,
-  amerSchoolImage_3,
-  amerSchoolImage_4,
-  amerSchoolImage_5,
-  amerSchoolImage_6,
-  amerSchoolImage_7,
-  amerSchoolImage_8,
-  amerSchoolImage_9,
-  amerSchoolImage10,
-];
+// AUTO GENERATE LIST FOR AMER SCHOOL APP
+List<String> amerSchoolImages = List.generate(
+  10,
+  (index) => "$amerSchoolImagesUrl${index + 1}.webp",
+);
+
+// AUTO GENERATE LIST FOR MOVIE APP
+List<String> movieAppImages = List.generate(
+  8,
+  (index) => "$movieAppImagesUrl${index + 1}.webp",
+);
+
+// AUTO GENERATE LIST FOR Animated UI APP
+List<String> animatedUIImages = List.generate(
+  8,
+  (index) => "$animatedUIImagesUrl${index + 1}.webp",
+);
+
+// AUTO GENERATE LIST FOR Note Book APP
+List<String> noteBookImages = List.generate(
+  5,
+  (index) => "$noteBookImagesUrl${index + 1}.webp",
+);
+
+// AUTO GENERATE LIST FOR AI Radio APP
+List<String> radioAppImages = List.generate(
+  3,
+  (index) => "$aiRadioAppImagesUrl${index + 1}.webp",
+);
+
+// AUTO GENERATE LIST FOR Tic Tac Toe APP
+List<String> ticTacToeImages = List.generate(
+  3,
+  (index) => "$ticTacToeImagesUrl${index + 1}.webp",
+);
+
+// AUTO GENERATE LIST FOR Flutter Puzzle APP
+List<String> flutterPuzzleImages = List.generate(
+  6,
+  (index) => "$flutterPuzzleImagesUrl${index + 1}.webp",
+);
+
 // FEEDBACK SECTION
 const String feedback = "Feedback";
 const String feedbackDescription =

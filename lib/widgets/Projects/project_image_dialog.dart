@@ -20,21 +20,25 @@ class _ProjectImageDialogState extends State<ProjectImageDialog> {
   Widget build(BuildContext context) {
     return Dialog(
       insetPadding: const EdgeInsets.all(20),
-      backgroundColor: Colors.black,
+
+      // For Background Color
+      backgroundColor: Colors.black.withOpacity(0.4),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      
+
       // TO KNOW THE AVAILABLE SPACE, LAYOUT BUILDER USED
       child: LayoutBuilder(
         builder: (context, constraints) {
           return Stack(
             children: [
               SizedBox(
-                width: (constraints.maxWidth <= 800) ? constraints.maxWidth: 800,
+                width: (constraints.maxWidth <= 800)
+                    ? constraints.maxWidth
+                    : 800,
                 height: 400,
                 child: Column(
                   children: [
                     const SizedBox(height: 40),
-                    
+
                     //IMAGE SECTION
                     Expanded(
                       child: Stack(
@@ -45,7 +49,7 @@ class _ProjectImageDialogState extends State<ProjectImageDialog> {
                             carouselController: carouselController,
                             options: CarouselOptions(
                               enableInfiniteScroll: false,
-                              viewportFraction: 1.0,
+                              viewportFraction: 0.5,
                               height: 300,
                               onPageChanged: (index, reason) {
                                 setState(() {

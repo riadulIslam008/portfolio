@@ -52,15 +52,28 @@ const String ticTacToeGameApkLink =
 const String aiRadioApkLink =
     "https://drive.usercontent.google.com/download?id=1-1e-vyjyu9BflJ_RD_pVdimwaUsnz78_&export=download&authuser=0";
 
-// AMER SCHOOL IMAGES LIST
-const String amerSchoolImage_1= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-1.webp";
-const String amerSchoolImage_2= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-2.webp";
-const String amerSchoolImage_3= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-3.webp";
-const String amerSchoolImage_4= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-4.webp";
-const String amerSchoolImage_5= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-5.webp";
-const String amerSchoolImage_6= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-6.webp";
-const String amerSchoolImage_7= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-7.webp";
-const String amerSchoolImage_8= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-8.webp";
-const String amerSchoolImage_9= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-9.webp";
-const String amerSchoolImage10= "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-10.webp";
+// AUTO GENERATE LIST FOR AMER SCHOOL URL
+const String amerSchoolImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/image-";
 
+// AUTO GENERATE LIST FOR MOVIE APP URL
+const String movieAppImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/Amer-School-Images/refs/heads/main/movie-app/image";
+
+// AUTO GENERATE LIST FOR ANIMATED UI APP URL
+const String animatedUIImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/Animated%20UI%20images/image";
+
+// AUTO GENERATE LIST FOR NOTE BOOK URL
+const String noteBookImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/Note%20Book/image";
+
+// AUTO GENERATE LIST FOR AI RADIO URL
+const String aiRadioAppImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/Radio%20App/image";
+// AUTO GENERATE LIST FOR TIC TAC TOE URL
+const String ticTacToeImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/Tic%20Tac%20Toe/image";
+// AUTO GENERATE LIST FOR FLUTTER PUZZLE URL
+const String flutterPuzzleImagesUrl =
+    "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/flutter%20Puzzle%20Images/image";

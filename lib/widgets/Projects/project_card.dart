@@ -3,7 +3,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_app/Config/font_text_style.dart';
-import 'package:portfolio_app/Config/text_string.dart';
 import 'package:portfolio_app/widgets/Projects/project_image_dialog.dart';
 import 'package:portfolio_app/widgets/Projects/project_items_object.dart';
 
@@ -24,8 +23,9 @@ class ProjectCard extends StatelessWidget {
       child: InkWell(
         onTap: () => showDialog(
           context: context,
-          //  List Must be dynamic in Future
-          builder: (_) => ProjectImageDialog(images: amerSchoolImages),
+
+          /// On Click Images show
+          builder: (_) => ProjectImageDialog(images: projectItemsObject.images),
         ),
         splashColor: Colors.redAccent.withOpacity(0.3),
         highlightColor: Colors.redAccent.withOpacity(0.2),
@@ -59,6 +59,7 @@ class ProjectCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
+
               // PROJECT NAME TEXT
               IgnorePointer(
                 child: Align(
@@ -69,6 +70,7 @@ class ProjectCard extends StatelessWidget {
                   ),
                 ),
               ),
+
               // icons
               Positioned(
                 bottom: 10,
