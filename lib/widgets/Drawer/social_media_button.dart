@@ -12,13 +12,13 @@ class SocialMediaButtons extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 15.0),
         child: Row(
-         mainAxisAlignment:  MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           spacing: screenwidth < 300 ? 0 : 15,
           children: [
             for (int i = 0; i < 5; i++)
               SocialMediaButton(
                 iconname: socialMediaIcons[i].iconName,
-                onTap: () {},
+                onTap: socialMediaIcons[i].onTap,
                 iconColor: socialMediaIcons[i].iconColor,
               ),
             // const Spacer(),
@@ -32,7 +32,7 @@ class SocialMediaButtons extends StatelessWidget {
 class SocialMediaButton extends StatelessWidget {
   final IconData iconname;
   final Color iconColor;
-  final VoidCallback onTap;
+  final Function onTap;
 
   const SocialMediaButton({
     super.key,
@@ -46,7 +46,7 @@ class SocialMediaButton extends StatelessWidget {
     double screenwidth = MediaQuery.of(context).size.width;
 
     return GestureDetector(
-      onTap: onTap,
+      onTap: () => onTap(),
       child: Container(
         padding: const EdgeInsets.all(6),
         alignment: Alignment.center,

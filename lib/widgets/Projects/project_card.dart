@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_app/Config/clicked_function.dart';
 import 'package:portfolio_app/Config/font_text_style.dart';
 import 'package:portfolio_app/widgets/Projects/project_image_dialog.dart';
 import 'package:portfolio_app/widgets/Projects/project_items_object.dart';
@@ -79,32 +80,57 @@ class ProjectCard extends StatelessWidget {
                 child: Row(
                   children: [
                     (projectItemsObject.liveDemo == null)
-                        ? Row(
-                            children: [
-                              Text(
-                                "Apk Link",
-                                style: FontTextStyle.textfont.copyWith(
+                        ///// APK ICON AND OnTAP FUNCTION////
+                        ? GestureDetector(
+                            onTap: () => ClickedFunction().launchURL(
+                              projectItemsObject.apkLink!,
+                            ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  "Apk Link",
+                                  style: FontTextStyle.textfont.copyWith(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(width: 5),
+                                Icon(
+                                  FontAwesomeIcons.googlePlay,
                                   color: Colors.white,
                                 ),
-                              ),
-                              SizedBox(width: 5),
-                              _icon(FontAwesomeIcons.googlePlay, () {}),
-                            ],
+                              ],
+                            ),
                           )
-                        : Row(
-                            children: [
-                              Text(
-                                "Live Demo",
-                                style: FontTextStyle.textfont.copyWith(
+                        //// LIVE DENO ICON AND ON TAP FUNCTION
+                        : GestureDetector(
+                            onTap: () => ClickedFunction().launchURL(
+                              projectItemsObject.liveDemo!,
+                            ),
+                            child: Row(
+                              children: [
+                                Text(
+                                  "Live Demo",
+                                  style: FontTextStyle.textfont.copyWith(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(width: 5),
+                                Icon(
+                                  FontAwesomeIcons.desktop,
                                   color: Colors.white,
                                 ),
-                              ),
-                              SizedBox(width: 5),
-                              _icon(FontAwesomeIcons.desktop, () {}),
-                            ],
+                              ],
+                            ),
                           ),
                     Spacer(),
-                    _icon(FontAwesomeIcons.github, () {}),
+
+                    ///// GITHUB LINK FOR MY PROJECT
+                    _icon(
+                      FontAwesomeIcons.github,
+                      () => ClickedFunction().launchURL(
+                        projectItemsObject.githubLink,
+                      ),
+                    ),
                   ],
                 ),
               ),

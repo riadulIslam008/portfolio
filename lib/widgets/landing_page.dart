@@ -1,6 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
 import 'package:portfolio_app/Config/color_code.dart';
 import 'package:portfolio_app/widgets/Drawer/drawer.dart';
 import 'package:portfolio_app/widgets/MainView/main_view.dart';
@@ -8,15 +6,13 @@ import 'package:portfolio_app/widgets/NavigationRailView.dart/navigation_rail_vi
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
-
   @override
-  State<LandingPage> createState() => _MyLandingPageState();
+  State<LandingPage> createState() => _LandingPageState();
 }
 
-class _MyLandingPageState extends State<LandingPage> {
-
-
+class _LandingPageState extends State<LandingPage> {
   final ScrollController scrollController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -32,12 +28,10 @@ class WebView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   // double screenHeight = MediaQuery.of(context).size.height;
-    return Scaffold(
+    return Scaffold  (
       body: Row(
         children: [
-          
-   ////// NAVIGATOR RAIL//////////
+          ////// NAVIGATOR RAIL//////////
           NavigationRailView(),
           Expanded(
             child: SafeArea(

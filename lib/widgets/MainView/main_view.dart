@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:portfolio_app/widgets/About/about_view.dart';
 import 'package:portfolio_app/widgets/Feedback/feedback_landing.dart';
 import 'package:portfolio_app/widgets/Home/home_view.dart';
@@ -11,6 +10,12 @@ class MainView extends StatelessWidget {
   final ScrollController scrollController;
   const MainView({super.key, required this.scrollController});
 
+  //GENERATING GLOBAL KEY FOR CALLING SCROLL WIDGET
+  static final List<GlobalKey> globalKey = List.generate(
+    widgetsTree.length,
+    (index) => GlobalKey(),
+  );
+
   static final List<Widget> widgetsTree = [
     HomeView(),
     AboutView(),
@@ -20,12 +25,6 @@ class MainView extends StatelessWidget {
     FeedbackLanding(),
   ];
 
-  //GENERATING GLOBAL KEY FOR CALLING SCROLL WIDGET
-  static final List<GlobalKey> globalKey = List.generate(
-    widgetsTree.length,
-    (index) => GlobalKey(),
-  );
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -33,12 +32,9 @@ class MainView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          for (int i = 0; i < widgetsTree.length; i++) 
+          for (int i = 0; i < widgetsTree.length; i++)
             Column(
-              children: [
-                SizedBox(key: globalKey[i]),
-                widgetsTree[i],
-              ],
+              children: [SizedBox(key: globalKey[i], child: widgetsTree[i])],
             ),
         ],
       ),

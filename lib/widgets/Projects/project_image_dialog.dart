@@ -36,6 +36,7 @@ class _ProjectImageDialogState extends State<ProjectImageDialog> {
                     : 800,
                 height: 400,
                 child: Column(
+                  spacing: 10,
                   children: [
                     const SizedBox(height: 40),
 
@@ -50,7 +51,7 @@ class _ProjectImageDialogState extends State<ProjectImageDialog> {
                             options: CarouselOptions(
                               enableInfiniteScroll: false,
                               viewportFraction: 0.5,
-                              height: 300,
+                              height: 400,
                               onPageChanged: (index, reason) {
                                 setState(() {
                                   _currentIndex = index;
@@ -66,34 +67,39 @@ class _ProjectImageDialogState extends State<ProjectImageDialog> {
                                 errorWidget: (ctx, _, __) =>
                                     const Icon(Icons.error, color: Colors.red),
                                 fit: BoxFit.contain,
+                                height: double.infinity,
                                 width: double.infinity,
                               );
                             }).toList(),
                           ),
 
                           // ARROW BUTTON LEFT
-                          Positioned(
-                            left: 0,
-                            child: IconButton(
-                              icon: const Icon(
-                                Icons.arrow_back_ios,
-                                color: Colors.white,
-                              ),
-                              onPressed: _prev,
-                            ),
-                          ),
+                          (_currentIndex == 0)
+                              ? SizedBox.shrink()
+                              : Positioned(
+                                  left: 0,
+                                  child: IconButton(
+                                    icon: const Icon(
+                                      Icons.arrow_back_ios,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: _prev,
+                                  ),
+                                ),
 
                           // ARROW BUTTON RIGHT
-                          Positioned(
-                            right: 0,
-                            child: IconButton(
-                              icon: const Icon(
-                                Icons.arrow_forward_ios,
-                                color: Colors.white,
-                              ),
-                              onPressed: _next,
-                            ),
-                          ),
+                          (_currentIndex == widget.images.length-1)
+                              ? SizedBox.shrink()
+                              : Positioned(
+                                  right: 0,
+                                  child: IconButton(
+                                    icon: const Icon(
+                                      Icons.arrow_forward_ios,
+                                      color: Colors.white,
+                                    ),
+                                    onPressed: _next,
+                                  ),
+                                ),
                         ],
                       ),
                     ),

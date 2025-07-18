@@ -71,9 +71,20 @@ const String noteBookImagesUrl =
 // AUTO GENERATE LIST FOR AI RADIO URL
 const String aiRadioAppImagesUrl =
     "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/Radio%20App/image";
+
 // AUTO GENERATE LIST FOR TIC TAC TOE URL
 const String ticTacToeImagesUrl =
     "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/Tic%20Tac%20Toe/image";
+
 // AUTO GENERATE LIST FOR FLUTTER PUZZLE URL
 const String flutterPuzzleImagesUrl =
     "https://raw.githubusercontent.com/riadulIslam008/images/refs/heads/main/flutter%20Puzzle%20Images/image";
+
+//FACEBOOK PROFILE LINK
+const String faceBookProfileLink = "https://www.facebook.com/riadul.islam.752";
+
+// LINKEND PROFILE LINK
+const String linkendProfileLink = "https://www.linkedin.com/in/riadul-islam-13814436a";
+
+// GITHUB PROFILE LINK
+const String githubProfileLink = "https://github.com/riadulIslam008";
