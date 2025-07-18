@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_app/Config/color_code.dart';
 import 'package:portfolio_app/widgets/Drawer/drawer.dart';
 import 'package:portfolio_app/widgets/MainView/main_view.dart';
+import 'package:portfolio_app/widgets/NavigationRailView.dart/navigation_rail_view.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -13,6 +14,8 @@ class LandingPage extends StatefulWidget {
 }
 
 class _MyLandingPageState extends State<LandingPage> {
+
+
   final ScrollController scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
@@ -29,18 +32,13 @@ class WebView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
+   // double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Row(
         children: [
-          ///Drawer........................
-          Container(
-            width: 280,
-            height: screenHeight,
-            alignment: Alignment.topLeft,
-            color: CustomeColor.secondaryColor,
-            child: const SideDrawer(),
-          ),
+          
+   ////// NAVIGATOR RAIL//////////
+          NavigationRailView(),
           Expanded(
             child: SafeArea(
               child: MainView(scrollController: scrollController),

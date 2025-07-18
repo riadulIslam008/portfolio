@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 import 'package:portfolio_app/widgets/About/about_view.dart';
@@ -34,7 +33,7 @@ class MainView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          for (int i = 0; i < widgetsTree.length; i++)
+          for (int i = 0; i < widgetsTree.length; i++) 
             Column(
               children: [
                 SizedBox(key: globalKey[i]),
