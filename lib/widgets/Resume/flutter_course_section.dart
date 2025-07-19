@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_app/Config/flexible_text.dart';
-import 'package:portfolio_app/Config/text_string.dart';
 import 'package:portfolio_app/widgets/Resume/horizontal_line.dart';
 
-class FlutterAdvanceCourseDetailsSection extends StatelessWidget {
-  const FlutterAdvanceCourseDetailsSection({super.key});
+class FlutterCourseDetailsSection extends StatelessWidget {
+  final Map flutterTopics;
+  final String flutterLearningPeriod;
+  const FlutterCourseDetailsSection({
+    super.key,
+    required this.flutterTopics, required this.flutterLearningPeriod,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +21,7 @@ class FlutterAdvanceCourseDetailsSection extends StatelessWidget {
           SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: flutterAdvanceTopics.entries.map((entry) {
+            children: flutterTopics.entries.map((entry) {
               final key = entry.key;
               final value = entry.value;
 
@@ -44,7 +48,7 @@ class FlutterAdvanceCourseDetailsSection extends StatelessWidget {
                         ),
                       ],
                     )
-                  : (value == "Flutter Advance")
+                  : (key == "Heading")
                   ? FlexibleTextWidget(text: value, fontSize: 15)
                   : Padding(
                       padding: const EdgeInsets.only(left: 8.0, bottom: 15),

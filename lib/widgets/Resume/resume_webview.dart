@@ -5,7 +5,7 @@ import 'package:portfolio_app/Config/description_text_view.dart';
 import 'package:portfolio_app/Config/font_text_style.dart';
 import 'package:portfolio_app/Config/header.dart';
 import 'package:portfolio_app/Config/text_string.dart';
-import 'package:portfolio_app/widgets/Resume/flutter_advance_course_section.dart';
+import 'package:portfolio_app/widgets/Resume/flutter_course_section.dart';
 import 'package:portfolio_app/widgets/Resume/university_degree_details.dart';
 
 class ResumeWebview extends StatelessWidget {
@@ -46,10 +46,20 @@ class ResumeWebview extends StatelessWidget {
           // ==========================================
           // FLUTTER ADVANCED COURSE SECTION
           // ==========================================
-          FlutterAdvanceCourseDetailsSection(),
+          FlutterCourseDetailsSection(
+            flutterTopics: flutterAdvanceTopics,
+            flutterLearningPeriod: flutterAdvanceLearningPeriod,
+          ),
+          // ==========================================
+          // FLUTTER BIGNNER COURSE SECTION
+          // ==========================================
+          FlutterCourseDetailsSection(
+            flutterTopics: flutterBignnerCousre,
+            flutterLearningPeriod: flutterBingnnerLearningPeriod,
+          ),
+          SizedBox(height: 20),
         ],
       ),
     );
   }
 }
-

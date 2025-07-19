@@ -29,8 +29,10 @@ const List<Map<String, double>> skillProgressSectionName = [
   {"HTML": 1},
   {"CSS": 1},
   {"JAVASCRIPT": 1},
+  {"GitHub Version Control": 1},
   {"FIREBASE": .8},
   {"FLUTTER": 1},
+  {"Data Structures and Alogrithums": .9},
   {"PYTHON": .5},
 ];
 
@@ -49,6 +51,7 @@ const List universityEduction = [
 const String resume = "Resume";
 const String education = "Education";
 
+///// FULTTER ADVANCE COURSE DETAILS///////
 const Map<String, dynamic> flutterAdvanceTopics = {
   "Heading": "Flutter Advance",
 
@@ -70,7 +73,35 @@ const Map<String, dynamic> flutterAdvanceTopics = {
   "Local Storage": ["SQLite", "get storage", "Hive"],
 };
 
-const String flutterLearningPeriod = "08-2021 to 02-2022";
+const String flutterAdvanceLearningPeriod = "02-2022 to 08-2022";
+
+///// FULTTER BIGNNER COURSE DETAILS///////
+const String flutterBingnnerLearningPeriod = "08-2021 to 11-2021";
+const Map<String, dynamic> flutterBignnerCousre = {
+  "Heading": "Flutter Bignner",
+  "Organization": "Tech Solution BD",
+  "Dart Introduction": [
+    "Variables",
+    "Data Types",
+    "Control Flow",
+    "Basic Object-oriented Programming",
+  ],
+  "Flutter Widgets": [
+    "Scaffold",
+    "Text",
+    "Image",
+    "ListView",
+    "Column",
+    "Row",
+    "Stack and More",
+  ],
+  "Layouts and UI": [
+    "Container",
+    "TextField and TextFormField",
+    "Navigation",
+    "Set State and More",
+  ],
+};
 
 //PROJECT SECTION
 const String project = "Projects";
@@ -128,3 +159,9 @@ const String hintTextForEmail = "Your Email";
 const String hintTextForSubject = "Email Subject";
 const String hintTextForMessage = "Write Your Meassge";
 const String sendFeedback = "Send Feedback";
+
+/// ERROR MESSAGE FOR FEEDBACK SECTION
+const String nameErrorMessage = "Use your correct name";
+const String emailErrorMessage = "Use your correct Email";
+const String subjectErrorMessage = "Subject can't be empty";
+const String messageBoxErrorMessage = "Write something";

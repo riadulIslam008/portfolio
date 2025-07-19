@@ -37,8 +37,8 @@ final List<IconsObject> socialMediaIcons = [
     },
   ),
   IconsObject(
-    iconName: FontAwesomeIcons.instagram,
-    iconColor: const Color(0xFFE1306C),
+    iconName: FontAwesomeIcons.whatsapp,
+    iconColor: const Color(0xFF25D366),
     onTap: () => ClickedFunction().openWhatsAppProfile(),
   ),
   IconsObject(
