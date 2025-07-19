@@ -73,31 +73,13 @@ This site is deployed using **GitHub Pages**. If you'd like to do the same:
 
 ## 📁 Folder Structure
 
-lib/
-├── Config/ # App-wide configurations
-│ ├── color_code.dart # Color constants
-│ ├── description_text_view.dart
-│ ├── flexible_text.dart
-│ ├── font_text_style.dart # Font styles
-│ ├── header.dart
-│ ├── image_link.dart
-│ ├── social_media_icons.dart # Social media icon config
-│ └── text_string.dart # Text constants
 
-├── widgets/ # UI Components and Views
-│ ├── About/
-│ ├── Drawer/
-│ ├── Feedback/
-│ ├── Home/
-│ ├── MainView/
-│ ├── NavigationRailView.dart
-│ ├── Projects/
-│ ├── Resume/
-│ └── Skills/
+### 📄 Descriptions
 
-├── landing_page.dart # Entry layout and platform handler
-└── main.dart # Main entry point of the app
-
+- **Config/** – App-wide configurations (colors, text, fonts)
+- **widgets/** – Views and shared UI components
+- **landing_page.dart** – Platform detection and layout
+- **main.dart** – Main entry point of the app
 
 ---
 
